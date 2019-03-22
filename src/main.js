@@ -11,6 +11,18 @@ $(document).ready(function() {
   event.preventDefault();
   let mahBoi = new Doctor;
   mahBoi.findDoc();
+  setTimeout(function() {
+  console.log(mahBoi.docArr);
+  // mahBoi.grabData(doctors);
 
+}, 2000);
   });
 });
+
+
+
+
+
+
+//
+// each doctor: first name, last name, address, phone number, website and whether or not the doctor is accepting new patients
