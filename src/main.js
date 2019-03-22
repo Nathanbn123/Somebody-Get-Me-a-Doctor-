@@ -13,7 +13,9 @@ $(document).ready(function() {
   mahBoi.findDoc();
   setTimeout(function() {
   console.log(mahBoi.docArr);
-  // mahBoi.grabData(doctors);
+  let doctors = mahBoi.docArr[0];
+  console.log(doctors)
+  mahBoi.grabData(doctors);
 
 }, 2000);
   });
