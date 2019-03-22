@@ -51,19 +51,27 @@ export class Doctor {
       input[i].practices[0].website, input[i].practices[0].accepts_new_patients];
       doctorsArr.push(info);
     }
-    return doctorsArr.map();
+    return doctorsArr
   }
 
-}
 
-// seperate(input) {
-//   let finalDoctor
-//   input.forEach(element => {
-//   finalDoctor = (element[0] + element[1])
-//   });
-//  console.log(finalDoctor)
-// }
-// }
+  // splitIntoSubArray(arr, count) {
+  //   var newArray = [];
+  //   while (arr.length > 0) {
+  //     newArray.push(arr.splice(0, count));
+  //   }
+  //   return newArray;
+  // }
+
+
+seperate(input) {
+  let finalDoctor
+  input.forEach(element => {
+  finalDoctor = (element[0] + element[1])
+  });
+ console.log(finalDoctor)
+}
+}
 
 
 
