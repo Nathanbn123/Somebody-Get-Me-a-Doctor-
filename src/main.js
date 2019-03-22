@@ -14,8 +14,10 @@ $(document).ready(function() {
   setTimeout(function() {
   console.log(mahBoi.docArr);
   let doctors = mahBoi.docArr;
-  console.log(doctors)
-  mahBoi.grabData(doctors);
+  console.log(doctors);
+  mahBoi.doctorCheck(doctors);
+  let doctorInfo = mahBoi.grabData(doctors);
+  console.log(doctorInfo)
 
 }, 2000);
   });

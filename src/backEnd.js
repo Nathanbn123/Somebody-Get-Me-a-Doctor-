@@ -36,14 +36,22 @@ export class Doctor {
     });
   }
 
+  doctorCheck(input) {
+    if (input == []) {
+      console.log("Sorry, there are no doctors in your area that meet your criteria.")
+      // return "Sorry, there are no doctors in your area that meet your criteria."
+    }
+  }
+
   grabData(input) {
     var i;
+    let doctorsArr = []
     for (i = 0; i < input.length; i++) {
-
-      let info = [input[i].profile.first_name, input[i].profile.last_name, input[i].practices[0].visit_address.street, input[i].practices[0].phones[0],
+      let info = [input[i].profile.first_name, input[i].profile.last_name, input[i].practices[0].visit_address.street, input[i].practices[0].phones[0].number,
       input[i].practices[0].website, input[i].practices[0].accepts_new_patients];
-      console.log(info);
+      doctorsArr.push(info);
     }
+    return doctorsArr
   }
 }
 //   sortData() {
