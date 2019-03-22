@@ -7,6 +7,7 @@ import {Doctor} from "./backEnd.js";
 
 
 $(document).ready(function() {
-
+let mahBoi = new Doctor;
+mahBoi.findDoc(); 
 
 });
