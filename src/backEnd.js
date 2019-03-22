@@ -37,7 +37,8 @@ export class Doctor {
   }
 
   doctorCheck(input) {
-    if (input == []) {
+    let incArr = input
+    if (!Array.isArray(input) || !input.length) {
       console.log("Sorry, there are no doctors in your area that meet your criteria.")
       // return "Sorry, there are no doctors in your area that meet your criteria."
     }
@@ -53,15 +54,6 @@ export class Doctor {
     }
     return doctorsArr
   }
-
-
-  // splitIntoSubArray(arr, count) {
-  //   var newArray = [];
-  //   while (arr.length > 0) {
-  //     newArray.push(arr.splice(0, count));
-  //   }
-  //   return newArray;
-  // }
 
 
 seperate(input) {
@@ -84,12 +76,3 @@ seperate(input) {
 //     return info;
 //   });
 // }
-
-
-  // sortDocs(input) {
-  //   input.forEach() {
-  //
-  //
-  //   });
-  //
-  // }
