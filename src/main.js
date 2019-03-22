@@ -19,6 +19,9 @@ $(document).ready(function() {
   let doctorInfo = mahBoi.grabData(doctors);
   console.log(doctorInfo)
 
+
+  // let finalData = mahBoi.seperate(doctorInfo);
+  // console.log(finalData);
 }, 2000);
   });
 });

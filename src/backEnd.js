@@ -51,9 +51,23 @@ export class Doctor {
       input[i].practices[0].website, input[i].practices[0].accepts_new_patients];
       doctorsArr.push(info);
     }
-    return doctorsArr
+    return doctorsArr.map();
   }
+
 }
+
+// seperate(input) {
+//   let finalDoctor
+//   input.forEach(element => {
+//   finalDoctor = (element[0] + element[1])
+//   });
+//  console.log(finalDoctor)
+// }
+// }
+
+
+
+
 //   sortData() {
 //     forEach(function(){
 //     let info = [input.profile.first_name, input.profile.last_name, input.practices[0].visit_address.street, input.practices[0].phones[0],
