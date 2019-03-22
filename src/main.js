@@ -7,7 +7,10 @@ import {Doctor} from "./backEnd.js";
 
 
 $(document).ready(function() {
-let mahBoi = new Doctor;
-mahBoi.findDoc(); 
+  $('.helpMe').submit(function(event) {
+  event.preventDefault();
+  let mahBoi = new Doctor;
+  mahBoi.findDoc();
 
+  });
 });
