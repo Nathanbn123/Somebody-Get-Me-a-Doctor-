@@ -37,17 +37,25 @@ export class Doctor {
   }
 
   grabData(input) {
-      let info = [input.profile.first_name, input.profile.last_name, input.practices[0].visit_address.street, input.practices[0].phones[0],
-      input.practices[0].website, input.practices[0].accepts_new_patients];
+    var i;
+    for (i = 0; i < input.length; i++) {
+
+      let info = [input[i].profile.first_name, input[i].profile.last_name, input[i].practices[0].visit_address.street, input[i].practices[0].phones[0],
+      input[i].practices[0].website, input[i].practices[0].accepts_new_patients];
       console.log(info);
-      return info;
+    }
   }
-
-  // sortData() {
-  //   forEach(grabData) {}
-  // }
-
 }
+//   sortData() {
+//     forEach(function(){
+//     let info = [input.profile.first_name, input.profile.last_name, input.practices[0].visit_address.street, input.practices[0].phones[0],
+//     input.practices[0].website, input.practices[0].accepts_new_patients];
+//     console.log(info);
+//     return info;
+//   });
+// }
+
+
   // sortDocs(input) {
   //   input.forEach() {
   //

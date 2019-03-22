@@ -13,7 +13,7 @@ $(document).ready(function() {
   mahBoi.findDoc();
   setTimeout(function() {
   console.log(mahBoi.docArr);
-  let doctors = mahBoi.docArr[0];
+  let doctors = mahBoi.docArr;
   console.log(doctors)
   mahBoi.grabData(doctors);
 
