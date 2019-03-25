@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application is a doctor search engine which will allow the user to search for specific doctors in their area!
+_This application is a doctor search engine which will allow the user to search for specific doctors in their area!_
 
 ## Planning
 
