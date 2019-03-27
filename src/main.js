@@ -12,17 +12,20 @@ $(document).ready(function() {
   let mahBoi = new Doctor;
   mahBoi.findDoc();
   setTimeout(function() {
-  console.log(mahBoi.docArr);
+  // console.log(mahBoi.docArr);
   let doctors = mahBoi.docArr;
-  console.log(doctors);
+  // console.log(doctors);
   mahBoi.doctorCheck(doctors);
   let doctorInfo = mahBoi.grabData(doctors);
   console.log(doctorInfo)
+  doctorInfo.forEach(function(element){
+  $('.output-area').append('<p>' + element + '</p>')
+});
 
 
   // let finalData = mahBoi.seperate(doctorInfo);
   // console.log(finalData);
-}, 2000);
+}, 1000);
   });
 });
 

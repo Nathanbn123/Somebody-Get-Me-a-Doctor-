@@ -28,7 +28,7 @@ export class Doctor {
     promise.then(function(response) {
 
       const body = JSON.parse(response);
-      console.log(body)
+
       console.log(body.data)
       that.docArr = body.data;
     }, function(error) {
@@ -43,6 +43,17 @@ export class Doctor {
       // return "Sorry, there are no doctors in your area that meet your criteria."
     }
   }
+
+  // display(input) {
+  // var i;
+  // for (i = 0; i < input.length; i++) {
+  //
+  //
+  //
+  //
+  //
+  // }
+  // }
 
   grabData(input) {
     var i;
