@@ -12,14 +12,12 @@ $(document).ready(function() {
   let mahBoi = new Doctor;
   mahBoi.findDoc();
   setTimeout(function() {
-  // console.log(mahBoi.docArr);
   let doctors = mahBoi.docArr;
-  // console.log(doctors);
   mahBoi.doctorCheck(doctors);
   let doctorInfo = mahBoi.grabData(doctors);
   console.log(doctorInfo)
   doctorInfo.forEach(function(element){
-  $('.output-area').append('<p>' + element + '</p>')
+  $('.output-area').append('<p> First Name :' + element[0] + '</p>' + '<p> Last Name :' + element[1] + '</p>' + '<p> Address :' + element[2] + '</p>' + '<p> Phone Nuber :' + element[3] + '</p>')
 });
 
 

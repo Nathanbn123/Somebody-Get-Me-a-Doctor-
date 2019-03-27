@@ -29,7 +29,6 @@ export class Doctor {
 
       const body = JSON.parse(response);
 
-      console.log(body.data)
       that.docArr = body.data;
     }, function(error) {
       console.log(error);
@@ -40,6 +39,7 @@ export class Doctor {
     let incArr = input
     if (!Array.isArray(input) || !input.length) {
       console.log("Sorry, there are no doctors in your area that meet your criteria.")
+      return "Sorry, there are no doctors in your area that meet your criteria."
       // return "Sorry, there are no doctors in your area that meet your criteria."
     }
   }
