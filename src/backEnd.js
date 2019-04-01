@@ -44,16 +44,19 @@ export class Doctor {
     }
   }
 
-  // display(input) {
-  // var i;
-  // for (i = 0; i < input.length; i++) {
-  //
-  //
-  //
-  //
-  //
-  // }
-  // }
+  webSiteCheck(input) {
+    if (input[4] === 'undefined') {
+      return 'No Website avialable'
+    }
+  }
+
+  acceptingCheck() {
+    if (this[5] === true) {
+      return 'Currently accepting new patients!'
+    } else {
+      return 'Not currently accpeting new patients, sorry.'
+    }
+  }
 
   grabData(input) {
     var i;
@@ -65,25 +68,4 @@ export class Doctor {
     }
     return doctorsArr
   }
-
-
-seperate(input) {
-  let finalDoctor
-  input.forEach(element => {
-  finalDoctor = (element[0] + element[1])
-  });
- console.log(finalDoctor)
 }
-}
-
-
-
-
-//   sortData() {
-//     forEach(function(){
-//     let info = [input.profile.first_name, input.profile.last_name, input.practices[0].visit_address.street, input.practices[0].phones[0],
-//     input.practices[0].website, input.practices[0].accepts_new_patients];
-//     console.log(info);
-//     return info;
-//   });
-// }
